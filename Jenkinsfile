@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    steges {
+    stages {
         stage ('Build Docker Image') {
             steps {
                 script {
