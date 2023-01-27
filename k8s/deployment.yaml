@@ -50,8 +50,8 @@ spec:
         app: web
       annotations:
 	      prometheus.io/scrape: "true"
-	      prometheus.io/scrape: "8080"
-        prometheus.io/scrape: "/metrics"
+	      prometheus.io/port: "8080"
+        prometheus.io/path: "/metrics"
     spec:
       containers:
         - name: web
