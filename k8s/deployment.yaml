@@ -48,14 +48,10 @@ spec:
     metadata:
       labels:
         app: web
-      annotations:
-	 #prometheus.io/scrape: "true"
-	 #prometheus.io/port: "8080"
-         #prometheus.io/path: "/metrics"
     spec:
       containers:
         - name: web
-          image: fabricioveronez/kube-news:9
+          image: thefly72003/kube-news:{{TAG}}
           ports:
           - containerPort: 8080
           env:
